@@ -1,13 +1,80 @@
 #include "stdafx.h"
 #include <iostream>
 #include <ctime>
+#include <string>
+#include <vector>
+#include <algorithm> /* 算法 */
 
 
 using namespace std;
 
 int main()
 {
+	vector<double> vecDouble = { 98.5, 67.9, 43.6, 32.9 };	//向量容器vector
+	//向数组中插入数字
+	vecDouble.push_back(100.8);//在数组的尾部插入一个数字
+	//遍历1
+	for (int i = 0; i < vecDouble.size(); i++) {
+		cout << vecDouble[i] << endl;
+	}	cout << endl;
 
+	//集合的通用遍历方法：使用迭代器 iterator
+	//以下是迭代器的基本用法，高能慎重！
+	vector<double>::iterator it;	//得到迭代器对象那个 - 实际上是一个指针对象！
+	//it.begin	从第一个元素开始迭代
+	for (it = vecDouble.begin(); it != vecDouble.end(); ++it) {
+		cout << *it << endl;
+	}	cout << endl;
+
+	//排序
+	sort(vecDouble.begin(), vecDouble.end());		//从小到大排序
+	for (int i = 0; i < vecDouble.size(); i++) {
+		cout << vecDouble[i] << endl;
+	}	cout << endl;
+
+	reverse(vecDouble.begin(), vecDouble.end());	//从小到大排序
+	for (int i = 0; i < vecDouble.size(); i++) {
+		cout << vecDouble[i] << endl;
+	}	cout << endl;
+
+
+
+
+
+
+	/*
+	//使用二维数组
+	string stu_names[] { "刘备", "关羽", "张飞" };
+	string course_names[]{ "语文", "数学", "英语" };
+	const int ROW = 3;//sizeof(stu_names) / sizeof(stu_names[0])
+	const int COL = 3;
+	double scores[ROW][COL];
+	for (int i = 0; i < ROW; i++) {//外层循环控制学生
+		for (int j = 0; j < COL; j++) {//内层循环控制课程
+			cout << stu_names[i] << "的" << course_names[j] << "成绩：";
+			cin >> scores[i][j];
+		}
+	}
+	cout << '\t';
+	for (int i = 0; i < COL; i++) {
+		cout << course_names[i] << '\t';
+	}
+	cout << endl;
+	for (int i = 0; i < ROW; i++) {
+		cout << stu_names[i] << '\t';
+		for (int j = 0; j < COL; j++) {
+			cout << scores[i][j] << "\t";
+		}
+		cout << endl;
+	}
+	*/
+
+
+
+
+
+
+	/*
 	//实现数组元素的删除和插入
 	double power[10];//数组的大小一旦确定了，就不能在更改了！
 	int powerCount = 0;//当前数组中的元素个数
@@ -71,7 +138,7 @@ int main()
 		cout << power[i] << '\t';
 	}
 	cout << endl;
-
+	*/
 	
 
 

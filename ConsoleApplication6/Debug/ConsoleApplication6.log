@@ -1,3 +1,5 @@
 ﻿  ConsoleApplication6.cpp
-  ConsoleApplication6.vcxproj -> d:\我的文档\visual studio 2015\Projects\ConsoleApplication6\Debug\ConsoleApplication6.exe
-  ConsoleApplication6.vcxproj -> d:\我的文档\visual studio 2015\Projects\ConsoleApplication6\Debug\ConsoleApplication6.pdb (Full PDB)
+d:\git clone\visual studio project\visual-studio-2015-project\consoleapplication6\consoleapplication6.cpp(17): warning C4018: “<”: 有符号/无符号不匹配
+d:\git clone\visual studio project\visual-studio-2015-project\consoleapplication6\consoleapplication6.cpp(31): warning C4018: “<”: 有符号/无符号不匹配
+d:\git clone\visual studio project\visual-studio-2015-project\consoleapplication6\consoleapplication6.cpp(36): warning C4018: “<”: 有符号/无符号不匹配
+  ConsoleApplication6.vcxproj -> D:\Git Clone\Visual Studio Project\Visual-Studio-2015-Project\Debug\ConsoleApplication6.exe
